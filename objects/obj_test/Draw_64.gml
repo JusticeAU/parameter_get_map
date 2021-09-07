@@ -1,5 +1,5 @@
 /// @description 
-
+//draw contents of map
 var _map_size = ds_map_size(launch_paramaters);
 var _key = ds_map_find_first(launch_paramaters)
 var _y = 50

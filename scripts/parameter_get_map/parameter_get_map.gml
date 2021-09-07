@@ -6,7 +6,7 @@ function parameter_get_map(){
 	for (var i = 0; i <= _param_count; i++){
 		var equalPos = string_pos("=", parameter_string(i)); //get position of the = sign.
 	
-		if (equalPos == 0) { //if no = sign exists in the param, store as undefined+n key.
+		if (equalPos <= 1) { //if nothing exists before an = sign, store as undefined+n key.
 			var _key = "undefined"+string(_undef);
 			var _value = parameter_string(i);
 			_undef++;
